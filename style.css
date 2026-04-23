@@ -180,7 +180,6 @@ nav {
   padding: 2px;
 }
 
-/* ---- SECTION BASE ---- */
 section {
   position: relative; z-index: 1;
   padding: 5rem 5vw;
@@ -204,7 +203,6 @@ section {
   font-weight: 300;
 }
 
-/* ---- ABOUT ---- */
 #about { background: linear-gradient(160deg, var(--pink-50) 0%, var(--blue-50) 100%); }
 .about-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
@@ -223,7 +221,7 @@ section {
   font-size: 0.9rem; color: var(--text-mid); line-height: 1.7; font-weight: 300;
 }
 
-/* ---- SKILLS ---- */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -256,7 +254,6 @@ section {
   border-color: var(--lavender-mid);
 }
 
-/* ---- EXPERIENCE ---- */
 #experience { background: var(--white); }
 .timeline { position: relative; padding-left: 2rem; }
 .timeline::before {
@@ -314,7 +311,6 @@ section {
   border: 1px solid var(--blue-100);
 }
 
-/* ---- PROJECTS ---- */
 #projects { background: linear-gradient(160deg, var(--blue-50) 0%, var(--pink-50) 100%); }
 .projects-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -353,7 +349,6 @@ section {
   margin-bottom: 1.2rem;
 }
 
-/* ---- EDUCATION & CERTS ---- */
 #education { background: var(--white); }
 .edu-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
@@ -380,7 +375,6 @@ section {
 }
 .cert-year { font-size: 0.72rem; font-weight: 600; color: var(--pink-400); }
 
-/* ---- CONTACT ---- */
 #contact {
   background: linear-gradient(135deg, #1a1624 0%, #1e2a40 100%);
   color: white;
@@ -415,21 +409,18 @@ section {
   font-size: 0.88rem; color: #d0d0e8; word-break: break-all;
 }
 
-/* ---- FOOTER ---- */
 footer {
   background: #12101e; color: #555570;
   text-align: center; padding: 1.5rem; font-size: 0.8rem;
   position: relative; z-index: 1;
 }
 
-/* ---- SCROLL FADE IN ---- */
 .fade-in {
   opacity: 0; transform: translateY(28px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-/* ---- PROJECT LINKS ---- */
 .project-links {
   margin-bottom: 1.2rem;
   display: flex;
@@ -464,23 +455,21 @@ footer {
   fill: currentColor;
 }
 
-/* ---- NAV CV BUTTON ---- */
 .nav-links .btn-cv-nav {
-  background-color: var(--blue-50); /* Açık mavi arka plan */
-  color: var(--blue-500); /* Koyu mavi yazı rengi */
-  padding: 8px 18px; /* Kutunun iç boşlukları */
-  border-radius: 99px; /* Kenarları tam yuvarlak (hap şeklinde) */
-  border: 1px solid var(--blue-100); /* Çok hafif bir çerçeve */
+  background-color: var(--blue-50); 
+  color: var(--blue-500); 
+  padding: 8px 18px; 
+  border-radius: 99px; 
+  border: 1px solid var(--blue-100); 
   font-weight: 600;
   transition: all 0.2s ease;
 }
 
-/* Mouse ile üzerine gelindiğindeki efekt */
 .nav-links .btn-cv-nav:hover {
-  background-color: var(--blue-100); /* Rengi biraz koyulaşır */
+  background-color: var(--blue-100); 
   color: var(--blue-500);
-  transform: translateY(-2px); /* Hafifçe yukarı kalkar */
-  box-shadow: 0 4px 12px rgba(105, 163, 233, 0.2); /* Mavi tatlı bir gölge */
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 12px rgba(105, 163, 233, 0.2);
 }
 /* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
@@ -504,4 +493,151 @@ footer {
   .edu-grid { grid-template-columns: 1fr; }
   .timeline { padding-left: 1.4rem; }
   .timeline-item::before { left: -1.85rem; }
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: var(--text-dark);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.theme-toggle:hover {
+  transform: rotate(-20deg) scale(1.1);
+}
+
+/* ═══════════════════════════════════════════════
+   DARK ACADEMIA 
+   ═══════════════════════════════════════════════ */
+
+[data-theme="dark"] {
+  --white:      #1e1518;   /* Ana bg — koyu vişne-kahve */
+  --pink-50:    #251b1e;   /* Surface */
+  --blue-50:    #251b1e;
+  --lavender:   #2c2022;   /* Kartlar */
+
+  --pink-100:   #2c2022;
+  --pink-200:   #3d2025;
+  --pink-300:   #6b1622;
+  --pink-400:   #9e2535;   /* Ana bordo vurgu */
+  --pink-500:   #bf2d40;   /* Hover */
+
+  --blue-100:   #2a2122;
+  --blue-200:   #3d3032;
+  --blue-300:   #5a4548;
+  --blue-400:   #8a6f70;
+  --blue-500:   #b09898;
+
+  --text-dark:  #f0e6e0;
+  --text-mid:   #c9b5b0;
+  --text-muted: #8a6f70;
+
+  --border:       rgba(158, 37, 53, 0.22);
+  --shadow-soft:  0 4px 20px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(158, 37, 53, 0.1);
+}
+
+[data-theme="dark"] body {
+  background-color: #1e1518;
+  background-image:
+    repeating-linear-gradient(
+      0deg, transparent, transparent 39px,
+      rgba(158, 37, 53, 0.035) 39px, rgba(158, 37, 53, 0.035) 40px
+    ),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 39px,
+      rgba(158, 37, 53, 0.035) 39px, rgba(158, 37, 53, 0.035) 40px
+    );
+}
+
+[data-theme="dark"] body::before {
+  background: radial-gradient(ellipse 60% 40% at 15% 5%,
+    rgba(158, 37, 53, 0.10) 0%, transparent 70%);
+}
+[data-theme="dark"] body::after {
+  background: radial-gradient(ellipse 50% 35% at 85% 95%,
+    rgba(107, 22, 34, 0.08) 0%, transparent 70%);
+}
+
+[data-theme="dark"] nav {
+  background: rgba(22, 16, 18, 0.94);
+  border-bottom: 1px solid rgba(158, 37, 53, 0.28);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+[data-theme="dark"] nav::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0; height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(158, 37, 53, 0.4) 0px, rgba(158, 37, 53, 0.4) 4px,
+    transparent 4px, transparent 8px
+  );
+  pointer-events: none;
+}
+
+[data-theme="dark"] .about-card,
+[data-theme="dark"] .skill-group,
+[data-theme="dark"] .timeline-item,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .edu-card {
+  background: #2c2022;
+  border: 1px solid rgba(158, 37, 53, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: background 0.3s, border-color 0.3s;
+}
+[data-theme="dark"] .about-card::before,
+[data-theme="dark"] .project-card::before,
+[data-theme="dark"] .edu-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #9e2535, transparent);
+  opacity: 0; transition: opacity 0.3s; pointer-events: none;
+}
+[data-theme="dark"] .about-card::after,
+[data-theme="dark"] .project-card::after,
+[data-theme="dark"] .edu-card::after {
+  content: '';
+  position: absolute; bottom: 8px; right: 8px;
+  width: 18px; height: 18px;
+  border-right: 1px solid rgba(158, 37, 53, 0.4);
+  border-bottom: 1px solid rgba(158, 37, 53, 0.4);
+  pointer-events: none;
+}
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .about-card:hover,
+[data-theme="dark"] .edu-card:hover {
+  background: #332528;
+  border-color: rgba(158, 37, 53, 0.42);
+}
+[data-theme="dark"] .project-card:hover::before,
+[data-theme="dark"] .about-card:hover::before,
+[data-theme="dark"] .edu-card:hover::before {
+  opacity: 1;
+}
+
+[data-theme="dark"] .project-link {
+  background: #251b1e;
+  border: 1px solid rgba(158, 37, 53, 0.32);
+  color: #c9b5b0;
+  transition: all 0.25s;
+}
+[data-theme="dark"] .project-link:hover {
+  background: rgba(107, 22, 34, 0.45);
+  border-color: #9e2535;
+  color: #f0e6e0;
+}
+
+[data-theme="dark"] .nav-links .btn-cv-nav {
+  background: transparent;
+  color: #c9b5b0;
+  border: 1px solid rgba(158, 37, 53, 0.42);
+}
+[data-theme="dark"] .nav-links .btn-cv-nav:hover {
+  background: #6b1622;
+  border-color: #9e2535;
+  color: #f0e6e0;
 }

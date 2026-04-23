@@ -17,3 +17,26 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ---- DARK MODE TOGGLE LOGIC ----
+const themeToggleBtn = document.getElementById('theme-toggle');
+const rootElement = document.documentElement; // <html> etiketini hedefler
+
+// Kullanıcının daha önceki tercihini kontrol et (Yohsa varsayılan light kalır)
+const savedTheme = localStorage.getItem('theme') || 'light';
+rootElement.setAttribute('data-theme', savedTheme);
+themeToggleBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+themeToggleBtn.addEventListener('click', () => {
+  const currentTheme = rootElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  
+  // Temayı HTML'e uygula
+  rootElement.setAttribute('data-theme', newTheme);
+  
+  // Tercihi tarayıcı hafızasına kaydet
+  localStorage.setItem('theme', newTheme);
+  
+  // İkonu güneşe veya aya çevir
+  themeToggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+});
