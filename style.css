@@ -464,6 +464,24 @@ footer {
   fill: currentColor;
 }
 
+/* ---- NAV CV BUTTON ---- */
+.nav-links .btn-cv-nav {
+  background-color: var(--blue-50); /* Açık mavi arka plan */
+  color: var(--blue-500); /* Koyu mavi yazı rengi */
+  padding: 8px 18px; /* Kutunun iç boşlukları */
+  border-radius: 99px; /* Kenarları tam yuvarlak (hap şeklinde) */
+  border: 1px solid var(--blue-100); /* Çok hafif bir çerçeve */
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Mouse ile üzerine gelindiğindeki efekt */
+.nav-links .btn-cv-nav:hover {
+  background-color: var(--blue-100); /* Rengi biraz koyulaşır */
+  color: var(--blue-500);
+  transform: translateY(-2px); /* Hafifçe yukarı kalkar */
+  box-shadow: 0 4px 12px rgba(105, 163, 233, 0.2); /* Mavi tatlı bir gölge */
+}
 /* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
   nav { padding: 1rem 5vw; }
