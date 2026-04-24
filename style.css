@@ -120,8 +120,6 @@ nav {
   color: var(--pink-400); /* Üzerine gelince tatlı bir vurgu rengi */
   transform: translateY(-2px); /* Dönmek yerine asilce hafif yukarı kalksın */
 }
-
-/* Mevcut theme-toggle ayarındaki ufak düzeltme (margin'i siliyoruz çünkü gap kullandık) */
 .theme-toggle {
   background: none;
   border: none;
@@ -139,6 +137,7 @@ nav {
   padding: 7rem 5vw 4rem;
   position: relative; z-index: 1;
   gap: 4rem;
+  margin-left: 8rem;
 }
 .hero-text { flex: 1; }
 .hero-badge {
