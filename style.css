@@ -558,16 +558,16 @@ footer {
    ═══════════════════════════════════════════════ */
 
 [data-theme="dark"] {
-  --white:      #1e1518;   /* Ana bg — koyu vişne-kahve */
-  --pink-50:    #251b1e;   /* Surface */
+  --white:      #1e1518;   
+  --pink-50:    #251b1e;  
   --blue-50:    #251b1e;
-  --lavender:   #2c2022;   /* Kartlar */
+  --lavender:   #2c2022;  
 
   --pink-100:   #2c2022;
   --pink-200:   #3d2025;
   --pink-300:   #6b1622;
-  --pink-400:   #9e2535;   /* Ana bordo vurgu */
-  --pink-500:   #bf2d40;   /* Hover */
+  --pink-400:   #9e2535;   
+  --pink-500:   #bf2d40;  
 
   --blue-100:   #2a2122;
   --blue-200:   #3d3032;
@@ -686,10 +686,33 @@ footer {
   border-color: #9e2535;
   color: #f0e6e0;
 }
-/* Makale Bölümü Karanlık Mod Düzeltmeleri */
 [data-theme="dark"] #articles { background: linear-gradient(160deg, #0a0809 0%, #141011 100%); }
 [data-theme="dark"] .article-card { background: #120e0f; }
 [data-theme="dark"] .article-card:hover {
   box-shadow: 0 12px 32px rgba(0,0,0,0.8);
-  border-color: #9e1b29; /* Üzerine gelince kan kırmızısı çerçeve parlasın */
+  border-color: #9e1b29;
+}
+
+[data-theme="dark"] {
+  --lavender-mid: #6b1622; 
+}
+
+[data-theme="dark"] .hero-badge {
+  background: #2c2022;
+  color: #c9b5b0;
+}
+
+[data-theme="dark"] .tag.lavender {
+  background: #2c2022;
+  color: #c9b5b0;
+  border-color: rgba(158, 37, 53, 0.3);
+}
+
+[data-theme="dark"] #contact {
+  background: linear-gradient(135deg, #120e0f 0%, #1a1214 100%);
+}
+
+[data-theme="dark"] footer {
+  background: #0d0a0b;
+  color: #6b5055;
 }
