@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title data-i18n="myPortfolio">My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,20 +12,22 @@
 <nav>
   <a class="nav-logo" href="#hero">ZY</a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#articles">Articles</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about"data-i18n="aboutTitle" >About</a></li>
+    <li><a href="#skills"data-i18n="skillsTitle" >Skills</a></li>
+    <li><a href="#experience" data-i18n="experienceTitle">Experience</a></li>
+    <li><a href="#projects"data-i18n="projectTitle" >Projects</a></li>
+    <li><a href="#education" data-i18n="educationTitle" >Education</a></li>
+    <li><a href="#articles" data-i18n="articleTitle" >Articles</a></li>
+    <li><a href="#contact" data-i18n="contactTitle" >Contact</a></li>
     <li>
-      <a href="zisan_yuce_cv.pdf" download class="btn-cv-nav">Download CV</a>
+      <a href="zisan_yuce_cv.pdf" download class="btn-cv-nav" data-i18n="downloadCv">Download CV</a>
     </li>
   </ul>
-  <button id="theme-toggle" class="theme-toggle" aria-label="Gece/Gündüz Modu">
-    🌙
-  </button>
+  </ul> <div class="nav-actions">
+    <button id="lang-toggle" class="lang-toggle" aria-label="Dil Değiştir">TR</button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Gece/Gündüz Modu">🌙</button>
+  </div>
+
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -33,14 +35,14 @@
 
 <section id="hero">
   <div class="hero-text fade-in">
-    <div class="hero-badge">Available for full time job</div>
+    <div class="hero-badge" data-i18n="heroBadge">Available for full time job</div>
     <h1 class="hero-name">
       Zişan<br><em>Yüce</em>
     </h1>
-    <p class="hero-subtitle">Junior Full-Stack Developer · .NET & Flutter specialist building scalable backends and elegant mobile experiences.</p>
+    <p class="hero-subtitle" data-i18n="heroSubtitle">Junior Full-Stack Developer · .NET & Flutter specialist building scalable backends and elegant mobile experiences.</p>
     <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">View Projects ↓</a>
-      <a href="#contact" class="btn-outline">Get In Touch</a>
+      <a href="#projects" class="btn-primary" data-i18n="projects">View Projects ↓</a>
+      <a href="#contact" class="btn-outline" data-i18n="getInTouch">Get In Touch</a>
     </div>
   </div>
   <div class="hero-visual fade-in" style="transition-delay:0.15s">
@@ -49,27 +51,27 @@
 </section>
 
 <section id="about">
-  <p class="section-label fade-in">About me</p>
-  <h2 class="section-title fade-in">A developer who loves<br><em style="font-family:'DM Serif Display',serif;font-style:italic;">clean architecture.</em></h2>
+  <p class="section-label fade-in" data-i18n="aboutLabel">About me</p>
+  <h2 class="section-title fade-in" data-i18n="Adev">A developer who loves<br><em style="font-family:'DM Serif Display',serif;font-style:italic;" data-i18n="Clean">clean architecture.</em></h2>
   <div class="about-grid" style="margin-top:2rem">
     <div class="about-card fade-in">
-      <h3>Who I am</h3>
-      <p>Senior Computer Engineering student at Selçuk University (graduating Jan 2027), passionate about architecting scalable backend systems. Currently building a secure API infrastructure using .NET Core and PostgreSQL for a Fintech project, optimised for Flutter-based mobile clients.</p>
+      <h3 data-i18n="whoIam">Who I am</h3>
+      <p data-i18n="me">Senior Computer Engineering student at Selçuk University (graduating Jan 2027), passionate about architecting scalable backend systems. Currently building a secure API infrastructure using .NET Core and PostgreSQL for a Fintech project, optimised for Flutter-based mobile clients.</p>
     </div>
     <div class="about-card fade-in" style="transition-delay:0.1s">
-      <h3>What I'm after</h3>
-      <p>As a backend developer with a strong foundation in building scalable systems and a growing interest in React, I am passionate about bridging the gap between technical execution and business requirements. I aim to leverage my skills in both software development and business analysis to drive value in corporate projects. I am available for full-time opportunities starting immediately, which can seamlessly cover my mandatory internship period from September 2026 to December 2026</p>
+      <h3 data-i18n="whatIafter">What I'm after</h3>
+      <p data-i18n="aboutme">As a backend developer with a strong foundation in building scalable systems and a growing interest in React, I am passionate about bridging the gap between technical execution and business requirements. I aim to leverage my skills in both software development and business analysis to drive value in corporate projects. I am available for full-time opportunities starting immediately, which can seamlessly cover my mandatory internship period from September 2026 to December 2026</p>
     </div>
   </div>
 </section>
 
 <section id="skills">
-  <p class="section-label fade-in">Technical skills</p>
-  <h2 class="section-title fade-in">What I work with</h2>
-  <p class="section-desc fade-in">A versatile toolkit covering business analyst, backend, mobile, and databases.</p>
+  <p class="section-label fade-in" data-i18n="technical">Technical skills</p>
+  <h2 class="section-title fade-in" data-i18n="work">What I work with</h2>
+  <p class="section-desc fade-in" data-i18n="workEx">A versatile toolkit covering business analyst, backend, mobile, and databases.</p>
   <div class="skills-grid">
     <div class="skill-group fade-in">
-      <div class="skill-group-title">Languages</div>
+      <div class="skill-group-title" data-i18n="lang">Languages</div>
       <div class="skill-tags">
         <span class="tag">C#</span>
         <span class="tag">JavaScript</span>
@@ -89,7 +91,7 @@
       </div>
     </div>
     <div class="skill-group fade-in" style="transition-delay:0.14s">
-      <div class="skill-group-title">Databases</div>
+      <div class="skill-group-title" data-i18n="database">Databases</div>
       <div class="skill-tags">
         <span class="tag lavender">SQL Server</span>
         <span class="tag lavender">PostgreSQL</span>
@@ -97,7 +99,7 @@
       </div>
     </div>
     <div class="skill-group fade-in" style="transition-delay:0.21s">
-      <div class="skill-group-title">Web &amp; Tools</div>
+      <div class="skill-group-title" data-i18n="webTools">Web &amp; Tools</div>
       <div class="skill-tags">
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
@@ -110,40 +112,40 @@
       </div>
     </div>
     <div class="skill-group fade-in" style="transition-delay:0.28s">
-      <div class="skill-group-title">Concepts</div>
+      <div class="skill-group-title" data-i18n="concept">Concepts</div>
       <div class="skill-tags">
         <span class="tag lavender">OOP</span>
         <span class="tag lavender">CRUD</span>
         <span class="tag lavender">RESTful API</span>
         <span class="tag lavender">LINQ</span>
-        <span class="tag lavender">Layered Arch.</span>
+        <span class="tag lavender" data-i18n="layerdArch">Layered Arch.</span>
       </div>
     </div>
     <div class="skill-group fade-in" style="transition-delay:0.35s">
-      <div class="skill-group-title">Methodologies</div>
+      <div class="skill-group-title" data-i18n="method">Methodologies</div>
       <div class="skill-tags">
         <span class="tag">Agile</span>
         <span class="tag">Scrum</span>
-        <span class="tag blue">MVC Architecture</span>
+        <span class="tag blue" data-i18n="mvc">MVC Architecture</span>
       </div>
     </div>
   </div>
 </section>
 
 <section id="experience">
-  <p class="section-label fade-in">Experience</p>
-  <h2 class="section-title fade-in">Where I've worked</h2>
-  <p class="section-desc fade-in">Hands-on experience in full-stack web development and technical project coordination.</p>
+  <p class="section-label fade-in" data-i18n="experience">Experience</p>
+  <h2 class="section-title fade-in" data-i18n="experience2">Where I've worked</h2>
+  <p class="section-desc fade-in" data-i18n="experience3">Hands-on experience in full-stack web development and technical project coordination.</p>
   <div class="timeline">
     <div class="timeline-item fade-in">
-      <div class="timeline-period">Jul 2025 – Aug 2025</div>
-      <div class="timeline-role">Intern Full-Stack Software Developer</div>
+      <div class="timeline-period" data-i18n="date">Jul 2025 – Aug 2025</div>
+      <div class="timeline-role" data-i18n="role">Intern Full-Stack Software Developer</div>
       <div class="timeline-company">Impress Bilişim · Kadıköy, İstanbul</div>
       <ul>
-        <li>Worked on backend and frontend development using ASP.NET Core MVC.</li>
-        <li>Gained experience with SQL Server, Entity Framework Core, and LINQ queries.</li>
-        <li>Applied the MVC architecture to build scalable and maintainable systems.</li>
-        <li>Designed user-friendly interfaces aligned with layered architecture principles.</li>
+        <li data-i18n="whatIdo">Worked on backend and frontend development using ASP.NET Core MVC.</li>
+        <li data-i18n="whatIdo2">Gained experience with SQL Server, Entity Framework Core, and LINQ queries.</li>
+        <li data-i18n="whatIdo3">Applied the MVC architecture to build scalable and maintainable systems.</li>
+        <li data-i18n="whatIdo4">Designed user-friendly interfaces aligned with layered architecture principles.</li>
       </ul>
       <div class="tech-pills">
         <span class="tech-pill">ASP.NET Core MVC</span>
@@ -155,13 +157,13 @@
     </div>
 
     <div class="timeline-item fade-in" style="transition-delay:0.1s">
-      <div class="timeline-period">Jun 2025 – Jul 2025</div>
-      <div class="timeline-role">Intern Full-Stack Software Developer</div>
+      <div class="timeline-period" data-i18n="date2">Jun 2025 – Jul 2025</div>
+      <div class="timeline-role" data-i18n="role2">Intern Full-Stack Software Developer</div>
       <div class="timeline-company">MegaPass · Beyoğlu, İstanbul</div>
       <ul>
-        <li>Developed backend functionalities using Laravel.</li>
-        <li>Built dynamic user interfaces with React.</li>
-        <li>Leveraged Inertia.js for smooth frontend–backend integration.</li>
+        <li data-i18n="whatIdo5">Developed backend functionalities using Laravel.</li>
+        <li data-i18n="whatIdo6">Built dynamic user interfaces with React.</li>
+        <li data-i18n="whatIdo7">Leveraged Inertia.js for smooth frontend–backend integration.</li>
       </ul>
       <div class="tech-pills">
         <span class="tech-pill">Laravel</span>
@@ -171,35 +173,35 @@
     </div>
 
     <div class="timeline-item fade-in" style="transition-delay:0.2s">
-      <div class="timeline-period">Nov 2022 – May 2024</div>
-      <div class="timeline-role">Vice President </div>
-      <div class="timeline-company">R&amp;D and Technology Society · Konya</div>
+      <div class="timeline-period" data-i18n="date3">Nov 2022 – May 2024</div>
+      <div class="timeline-role" data-i18n="role3">Vice President </div>
+      <div class="timeline-company" data-i18n="company">R&amp;D and Technology Society · Konya</div>
       <ul>
-        <li>Coordinated ideation, literature review and technical reporting for 3 Teknofest project teams.</li>
-        <li>Assessed project feasibility and provided constructive feedback on technical reports.</li>
-        <li>Facilitated brainstorming sessions and managed cross-functional collaboration.</li>
+        <li data-i18n="whatIdo8">Coordinated ideation, literature review and technical reporting for 3 Teknofest project teams.</li>
+        <li data-i18n="whatIdo9">Assessed project feasibility and provided constructive feedback on technical reports.</li>
+        <li data-i18n="whatIdo10">Facilitated brainstorming sessions and managed cross-functional collaboration.</li>
       </ul>
       <div class="tech-pills">
-        <span class="tech-pill">Team Leader</span>
-        <span class="tech-pill">Time Management</span>
-        <span class="tech-pill">Communication </span>
-        <span class ="tech-pill">Teamwork </span>
+        <span class="tech-pill" data-i18n="skill">Team Leader</span>
+        <span class="tech-pill" data-i18n="skill2">Time Management</span>
+        <span class="tech-pill" data-i18n="skill3">Communication </span>
+        <span class ="tech-pill" data-i18n="skill4">Teamwork </span>
       </div>
     </div>
   </div>
 </section>
 
 <section id="projects">
-  <p class="section-label fade-in">Projects</p>
-  <h2 class="section-title fade-in">Things I've built</h2>
-  <p class="section-desc fade-in">From fintech apps to machine learning experiments – here's a selection of my work.</p>
+  <p class="section-label fade-in" data-i18n="projectsLabel">Projects</p>
+  <h2 class="section-title fade-in" data-i18n="projectsHClass">Things I've built</h2>
+  <p class="section-desc fade-in" data-i18n="projectsP">From fintech apps to machine learning experiments – here's a selection of my work.</p>
   <div class="projects-grid">
     
     <div class="project-card fade-in">
       <div class="project-number">01</div>
       <div class="project-title">ZenBudget</div>
-      <div class="project-subtitle">Fintech Mobile Application</div>
-      <p class="project-desc">Secure and scalable backend for a budget management app built with Layered Architecture. High-performance cross-platform mobile UI built with Flutter, complete with API integrations and state management.</p>
+      <div class="project-subtitle" data-i18n="projectZenBudget">Fintech Mobile Application</div>
+      <p class="project-desc" data-i18n="projectZenBudget2">Secure and scalable backend for a budget management app built with Layered Architecture. High-performance cross-platform mobile UI built with Flutter, complete with API integrations and state management.</p>
       
     
       <div class="skill-tags">
@@ -210,7 +212,7 @@
       </div>
       <br/>
       <div class="project-links">
-        <a href="https://github.com/yucezis/fintech-suite" target="_blank" class="project-link">
+        <a href="https://github.com/yucezis/fintech-suite" target="_blank" class="project-link" data-i18n="sourceCode">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
           Source Code
         </a>
@@ -220,8 +222,8 @@
     <div class="project-card fade-in" style="transition-delay:0.1s">
       <div class="project-number">02</div>
       <div class="project-title">Books</div>
-      <div class="project-subtitle">E-Commerce Platform · Graduation Project</div>
-      <p class="project-desc">End-to-end full-stack e-commerce system covering product listing, cart management, and order cycles. RESTful API endpoints designed for seamless communication between backend and mobile/web interfaces.</p>
+      <div class="project-subtitle" data-i18n="projectBooks">E-Commerce Platform · Graduation Project</div>
+      <p class="project-desc" data-i18n="projectBooks2">End-to-end full-stack e-commerce system covering product listing, cart management, and order cycles. RESTful API endpoints designed for seamless communication between backend and mobile/web interfaces.</p>
       
     
       <div class="skill-tags">
@@ -232,7 +234,7 @@
       </div>
       <br/>
       <div class="project-links">
-        <a href="https://github.com/yucezis/Books-ECommerce-Suite" target="_blank" class="project-link">
+        <a href="https://github.com/yucezis/Books-ECommerce-Suite" target="_blank" class="project-link" data-i18n="sourceCode">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
           Source Code
         </a>
@@ -241,16 +243,16 @@
 
     <div class="project-card fade-in" style="transition-delay:0.2s">
       <div class="project-number">03</div>
-      <div class="project-title">Pixel Processor</div>
-      <div class="project-subtitle">Image Processing & Data Transformation</div>
-      <p class="project-desc">Algorithms built from scratch that operate directly on raw pixel data (byte arrays) without third-party libraries. Complex mathematical transformations strengthening competencies in algorithmic problem-solving and memory management.</p>
+      <div class="project-title" data-i18n="projectPixel">Pixel Processor</div>
+      <div class="project-subtitle" data-i18n="projectPixel2">Image Processing & Data Transformation</div>
+      <p class="project-desc" data-i18n="projectPixel3">Algorithms built from scratch that operate directly on raw pixel data (byte arrays) without third-party libraries. Complex mathematical transformations strengthening competencies in algorithmic problem-solving and memory management.</p>
       
       <div class="skill-tags">
         <span class="tag">C#</span>
       </div>
       <br/>
       <div class="project-links">
-        <a href="https://github.com/yucezis/Core-Computer-Vision-Algorithms" target="_blank" class="project-link">
+        <a href="https://github.com/yucezis/Core-Computer-Vision-Algorithms" target="_blank" class="project-link" data-i18n="sourceCode">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
           Source Code
         </a>
@@ -259,9 +261,9 @@
 
     <div class="project-card fade-in" style="transition-delay:0.3s">
       <div class="project-number">04</div>
-      <div class="project-title">NBA Player Predictor</div>
-      <div class="project-subtitle">Machine Learning</div>
-      <p class="project-desc">Comprehensive data preprocessing and feature engineering on large NBA datasets. Trained and tested machine learning models based on statistical data, with performance metric analysis.</p>
+      <div class="project-title" data-i18n="projectNba">NBA Player Predictor</div>
+      <div class="project-subtitle" data-i18n="projectNba2">Machine Learning</div>
+      <p class="project-desc" data-i18n="projectNba3">Comprehensive data preprocessing and feature engineering on large NBA datasets. Trained and tested machine learning models based on statistical data, with performance metric analysis.</p>
       
       <div class="skill-tags">
         <span class="tag blue">Python</span>
@@ -269,67 +271,66 @@
         <span class="tag blue">Scikit-Learn</span>
         <span class="tag blue">Jupyter</span>
       </div>
-      <br/>
+      <br/>g
       <div class="project-links">
-        <a href="https://github.com/yucezis/NBA-Player-Prediction-ML" target="_blank" class="project-link">
+        <a href="https://github.com/yucezis/NBA-Player-Prediction-ML" target="_blank" class="project-link" data-i18n="sourceCode">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
           Source Code
         </a>
       </div>
-
     </div>
-    
+  
   </div>
 </section>
 
 <section id="education">
-  <p class="section-label fade-in">Education &amp; Achievements</p>
-  <h2 class="section-title fade-in">Background &amp; certificates</h2>
+  <p class="section-label fade-in" data-i18n="education">Education &amp; Achievements</p>
+  <h2 class="section-title fade-in" data-i18n="Background" >Background &amp; certificates</h2>
   <div class="edu-grid" style="margin-top:2rem">
     <div class="edu-card fade-in">
-      <h3>Computer Engineering</h3>
-      <div class="edu-school">Selçuk University, Konya</div>
-      <div class="edu-period">Sep 2022 – Jan 2027 (expected)</div>
+      <h3 data-i18n="CompEng">Computer Engineering</h3>
+      <div class="edu-school" data-i18n="Uni">Selçuk University, Konya</div>
+      <div class="edu-period" data-i18n="UniDate">Sep 2022 – Jan 2027 (expected)</div>
     </div>
     <div class="edu-card fade-in" style="transition-delay:0.1s">
-      <h3>Certificates &amp; Awards</h3>
+      <h3 data-i18n="cert">Certificates &amp; Awards</h3>
       <ul class="certs-list">
-        <li><span class="cert-dot"></span><div><div>Software Engineering Intern – HackerRank <span class="cert-year">2026</span></div></div></li>
-        <li><span class="cert-dot"></span><div><div>Huawei Cloud Developer Basic Training <span class="cert-year">2026</span></div></div></li>
-        <li><span class="cert-dot"></span><div><div>Online Commercial Automation with ASP.NET MVC 5 – Udemy <span class="cert-year">2025</span></div></div></li>
-        <li><span class="cert-dot"></span><div><div>Certificate of Honor – Selçuk University <span class="cert-year">2023</span></div></div></li>
-        <li><span class="cert-dot"></span><div><div>Certificate of High Honor – Selçuk University <span class="cert-year">2023</span></div></div></li>
+        <li><span class="cert-dot"></span><div><div data-i18n="certificates">Software Engineering Intern – HackerRank <span class="cert-year">2026</span></div></div></li>
+        <li><span class="cert-dot"></span><div><div data-i18n="certificates2">Huawei Cloud Developer Basic Training <span class="cert-year">2026</span></div></div></li>
+        <li><span class="cert-dot"></span><div><div data-i18n="certificates3">Online Commercial Automation with ASP.NET MVC 5 – Udemy <span class="cert-year">2025</span></div></div></li>
+        <li><span class="cert-dot"></span><div><div data-i18n="certificates4">Certificate of Honor – Selçuk University <span class="cert-year">2023</span></div></div></li>
+        <li><span class="cert-dot"></span><div><div data-i18n="certificates5">Certificate of High Honor – Selçuk University <span class="cert-year">2023</span></div></div></li>
       </ul>
     </div>
   </div>
 </section>
 
 <section id="articles">
-  <p class="section-label fade-in">Publications</p>
-  <h2 class="section-title fade-in">Latest articles</h2>
-  <p class="section-desc fade-in">Thoughts, tutorials, and insights on software engineering, published on Medium.</p>
+  <p class="section-label fade-in" data-i18n="Publications">Publications</p>
+  <h2 class="section-title fade-in" data-i18n="latestArticles">Latest articles</h2>
+  <p class="section-desc fade-in" data-i18n="articleSen">Thoughts, tutorials, and insights on software engineering, published on Medium.</p>
   
   <div class="articles-grid">
     <a href="https://medium.com/@yucezisan/asp-net-core-web-apilerde-custom-middleware-ile-global-exception-handling-cb6c6da8c16f" target="_blank" class="article-card fade-in">
-      <div class="article-meta">April 2026 </div>
-      <h3 class="article-title">Global Exception Handling in ASP.NET Core Web APIs with Custom Middleware</h3>
-      <p class="article-excerpt">This article explains how to set up global exception handling in C# and .NET 8 to prevent app crashes and improve user experience. It outlines the steps to build a centralized system using the modern IExceptionHandler interface and the ProblemDetails format.</p>
-      <div class="article-read-more">Read on Medium <span>→</span></div>
+      <div class="article-meta" data-i18n="date4">April 2026 </div>
+      <h3 class="article-title" data-i18n="articleTitleOzet">Global Exception Handling in ASP.NET Core Web APIs with Custom Middleware</h3>
+      <p class="article-excerpt" data-i18n="articleDes">This article explains how to set up global exception handling in C# and .NET 8 to prevent app crashes and improve user experience. It outlines the steps to build a centralized system using the modern IExceptionHandler interface and the ProblemDetails format.</p>
+      <div class="article-read-more" data-i18n="ReadIt">Read on Medium <span>→</span></div>
     </a>
 
     <a href="https://medium.com/@yucezisan/huawei-cloud-ile-sanal-sunucu-ecs-nasıl-oluşturulur-adım-adım-rehber-65e2e24c97a9" target="_blank" class="article-card fade-in" style="transition-delay:0.1s">
-      <div class="article-meta">December 2026 </div>
-      <h3 class="article-title">How to Create a Virtual Server (ECS) with Huawei Cloud — Step-by-Step Guide</h3>
-      <p class="article-excerpt">This article details how to step-by-step create an Elastic Cloud Server (ECS) on Huawei Cloud. By covering basic configuration, network settings, and connecting to the server via SSH or CloudShell, this guide helps you easily set up your own cloud server.</p>
-      <div class="article-read-more">Read on Medium <span>→</span></div>
+      <div class="article-meta" data-i18n="date5">December 2026 </div>
+      <h3 class="article-title" data-i18n="articleTitle2">How to Create a Virtual Server (ECS) with Huawei Cloud — Step-by-Step Guide</h3>
+      <p class="article-excerpt" data-i18n="articleDes2">This article details how to step-by-step create an Elastic Cloud Server (ECS) on Huawei Cloud. By covering basic configuration, network settings, and connecting to the server via SSH or CloudShell, this guide helps you easily set up your own cloud server.</p>
+      <div class="article-read-more" data-i18n="ReadIt">Read on Medium <span>→</span></div>
     </a>
   </div>
 </section>
 
 <section id="contact">
-  <p class="section-label fade-in">Contact</p>
-  <h2 class="section-title fade-in" style="color:white">Let's connect</h2>
-  <p class="section-desc fade-in">Open to internship opportunities. Feel free to reach out!</p>
+  <p class="section-label fade-in" data-i18n="contact">Contact</p>
+  <h2 class="section-title fade-in" style="color:white" data-i18n="letsConnect">Let's connect</h2>
+  <p class="section-desc fade-in" data-i18n="contact2">Open to internship opportunities. Feel free to reach out!</p>
   <div class="contact-grid">
     <a href="mailto:yucezisan@gmail.com" class="contact-card fade-in">
       <div class="contact-card-icon">✉️</div>
@@ -338,7 +339,7 @@
     </a>
     <a href="tel:+905398135506" class="contact-card fade-in" style="transition-delay:0.07s">
       <div class="contact-card-icon">📱</div>
-      <div class="contact-card-label">Phone</div>
+      <div class="contact-card-label" data-i18n="phone">Phone</div>
       <div class="contact-card-value">+90 539 813 5506</div>
     </a>
     <a href="https://linkedin.com/in/zisanyuce/" target="_blank" class="contact-card fade-in" style="transition-delay:0.14s">
@@ -358,14 +359,14 @@
     </a>
     <div class="contact-card fade-in" style="transition-delay:0.35s; cursor:default;">
       <div class="contact-card-icon">📍</div>
-      <div class="contact-card-label">Location</div>
+      <div class="contact-card-label" data-i18n="Location">Location</div>
       <div class="contact-card-value">Çekmeköy, İstanbul</div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Zişan Yüce · Crafted with care</p>
+  <p data-i18n="footer">© 2026 Zişan Yüce · Crafted with care</p>
 </footer>
 
 <script src="script.js"></script>

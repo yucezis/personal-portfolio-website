@@ -96,6 +96,42 @@ nav {
   transition: 0.3s;
 }
 
+/* ---- NAV ACTIONS (Dil ve Tema Butonları) ---- */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem; /* İki buton arasına şık bir boşluk */
+}
+
+/* Dil Butonu Özel Tasarımı */
+.lang-toggle {
+  background: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-mid);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.lang-toggle:hover {
+  color: var(--pink-400); /* Üzerine gelince tatlı bir vurgu rengi */
+  transform: translateY(-2px); /* Dönmek yerine asilce hafif yukarı kalksın */
+}
+
+/* Mevcut theme-toggle ayarındaki ufak düzeltme (margin'i siliyoruz çünkü gap kullandık) */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 0; /* BURAYI SIFIRLADIK */
+  color: var(--text-dark);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 /* ---- HERO ---- */
 #hero {
   min-height: 100vh;
@@ -715,4 +751,11 @@ footer {
 [data-theme="dark"] footer {
   background: #0d0a0b;
   color: #6b5055;
+}
+
+[data-theme="dark"] .lang-toggle {
+  color: var(--text-muted);
+}
+[data-theme="dark"] .lang-toggle:hover {
+  color: var(--text-dark); 
 }
