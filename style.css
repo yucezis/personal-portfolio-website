@@ -137,7 +137,6 @@ nav {
   padding: 7rem 5vw 4rem;
   position: relative; z-index: 1;
   gap: 4rem;
-  margin-left: 8rem;
 }
 .hero-text { flex: 1; }
 .hero-badge {
