@@ -24,7 +24,7 @@ const translations = {
     workEx:"A versatile toolkit covering business analyst, backend, mobile, and databases.",
     lang:"Languages",
     database:"Databases",
-    webTools:"Web &amp; Tools",
+    webTools:"Web & Tools",
     concept:"Concepts",
     layerdArch:"Layered Arch.",
     method:"Methodologies",
