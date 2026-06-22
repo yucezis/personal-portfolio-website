@@ -10,15 +10,15 @@ const translations = {
     contactTitle:"Contact",
     downloadCv:"Download CV",
     heroBadge:"Available for full time job",
-    heroSubtitle:"Junior Backend Developer | Business Analyst",
+    heroSubtitle:"IT Business Analyst",
     projects:"View Projects ↓",
     getInTouch:"Get In Touch",
     aboutLabel:"About me",
     Adev:"A developer who loves",
     whoIam:"Who I am",
-    me:"I am a senior Computer Engineering student (graduating Jan 2027) with a dual focus on backend development and technical business analysis. Working primarily within the .NET ecosystem, I build scalable architectures and real-time systems using SignalR. However, I am not just a developer who writes code; I approach my projects with a comprehensive 'product' vision—analyzing business rules, designing system models, and prioritizing user experience to create end-to-end solutions.",
+    me:"I am a senior Computer Engineering honors student (graduating Jan 2027) with a strong foundation in the .NET ecosystem. Rather than just writing code, my passion lies in Technical Business Analysis and Product Management. I build bridges between complex business needs and technical architectures. By combining my backend engineering background with a 'product-first' mindset, I transform raw requirements into scalable, end-to-end digital solutions.",
     whatIafter:"What I'm after",
-    aboutme:"I aim to leverage my 'technical empathy' gained from hands-on backend development—to act as a bridge between business requirements and technical execution. I am looking for roles where I can architect robust infrastructures while translating complex processes into clear requirements for technical teams. I am currently available for full-time opportunities, which will seamlessly cover my mandatory long-term internship from September 2026 to December 2026.",
+    aboutme:"I aim to leverage my 'technical empathy'—gained from hands-on software engineering—to serve as a strategic bridge between business stakeholders and development teams. I am seeking Technical Business Analyst roles where I can translate complex business needs into precise technical requirements (PRDs & User Stories), oversee Agile workflows, and validate data architecture. I am currently available for full-time opportunities that will seamlessly encompass my mandatory long-term internship from September to December 2026, with the ultimate goal of driving long-term value in a corporate tech environment.",
     technical:"Technical skills",
     work:"What I work with",
     workEx:"A versatile toolkit covering business analyst, backend, mobile, and databases.",
@@ -105,15 +105,15 @@ const translations = {
     contactTitle: "İletişim",
     downloadCv: "CV İndir",
     heroBadge: "Tam zamanlı iş fırsatlarına açık",
-    heroSubtitle: "Junior Backend Geliştirici | İş Analisti",
+    heroSubtitle: "BT İş Analisti",
     projects: "Projeleri İncele ↓",
     getInTouch: "İletişime Geç",
     aboutLabel: "Hakkımda",
-    Adev: "Seven bir geliştirici",
+    Adev: " ",
     whoIam: "Ben kimim",
-    me: "Bilgisayar Mühendisliği son sınıf öğrencisiyim (Mezuniyet: Ocak 2027). Kendimi sadece kod yazan bir backend geliştirici olarak değil, aynı zamanda sistemleri uçtan uca tasarlayan bir teknik iş analisti olarak konumluyorum. .NET ekosisteminde ölçeklenebilir mimariler ve gerçek zamanlı sistemler inşa ederken, projelerime her zaman iş kurallarını, mimari tasarımı ve kullanıcı deneyimini kapsayan tam bir 'ürün' vizyonuyla yaklaşıyorum.",
+    me: ".NET ekosisteminde güçlü bir temele sahip, Bilgisayar Mühendisliği bölümünde onur öğrencisi olarak eğitim gören (Ocak 2027'de mezun olacak) biriyim. Sadece kod yazmak yerine, Teknik İş Analizi ve Ürün Yönetimi benim tutkum. Karmaşık iş ihtiyaçları ile teknik mimariler arasında köprüler kuruyorum. Arka uç mühendisliği geçmişimi 'ürün odaklı' bir yaklaşımla birleştirerek, ham gereksinimleri ölçeklenebilir, uçtan uca dijital çözümlere dönüştürüyorum.",
     whatIafter: "Ne arıyorum",
-    aboutme: "Yazılım mutfağından kazandığım 'teknik empatiyi' kullanarak, iş birimlerinin ihtiyaçları ile teknik altyapı arasında kusursuz bir köprü kurmayı hedefliyorum. Karmaşık gereksinimleri analiz edip teknik ekipler için net modellere dönüştürürken, aynı zamanda güçlü backend çözümlerinin inşasında rol alabileceğim fırsatlar arıyorum. Eylül - Aralık 2026 arasındaki zorunlu uzun dönem işyeri eğitimimi de kapsayacak tam zamanlı pozisyonlar için hazırım.",
+    aboutme: "Yazılım mühendisliği alanındaki uygulamalı deneyimimden edindiğim 'teknik empati' yeteneğimi, iş paydaşları ve geliştirme ekipleri arasında stratejik bir köprü görevi görmek için kullanmayı hedefliyorum. Karmaşık iş ihtiyaçlarını kesin teknik gereksinimlere (Ürün Gereksinim Belgeleri ve Kullanıcı Hikayeleri) dönüştürebileceğim, Çevik iş akışlarını denetleyebileceğim ve veri mimarisini doğrulayabileceğim Teknik İş Analisti pozisyonları arıyorum. Eylül-Aralık 2026 tarihleri ​​arasında zorunlu uzun dönemli stajımı sorunsuz bir şekilde kapsayacak tam zamanlı iş fırsatlarına şu anda açığım; nihai hedefim kurumsal bir teknoloji ortamında uzun vadeli değer yaratmaktır.",
     technical: "Teknik yetenekler",
     work: "Nelerle çalışıyorum",
     workEx: "İş analistliği, backend, mobil ve veritabanlarını kapsayan çok yönlü bir araç seti.",
@@ -191,7 +191,6 @@ const translations = {
   }
 };
 
-// ---- 2. DİL DEĞİŞTİRME FONKSİYONU ----
 const langToggleBtn = document.getElementById('lang-toggle');
 let currentLang = localStorage.getItem('language') || 'en';
 
@@ -212,7 +211,6 @@ langToggleBtn.addEventListener('click', () => {
   setLanguage(currentLang);
 });
 
-// Sayfa yüklendiğinde dili ayarla
 setLanguage(currentLang);
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
